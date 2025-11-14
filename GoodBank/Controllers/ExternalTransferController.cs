@@ -10,25 +10,19 @@ namespace GoodBank.Controllers
     [ApiController]
     public sealed class ExternalTransferController : ControllerBase
     {
-        private readonly ExternalTransferService _service;
+        private readonly ExternalTransferService _externalService;
+        private readonly InternalTransferService _internalService;
 
-        public ExternalTransferController(ExternalTransferService service)
+        public ExternalTransferController(ExternalTransferService externalService, InternalTransferService internalService)
         {
-            _service = service;
+            _externalService = externalService;
+            _internalService = internalService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ExternalTransferRequestApiDto dto, CancellationToken ct)
+        [HttpPost("external")]
+        public async Task<IActionResult> External([FromBody] ExternalTransferRequestDto request,CancellationToken ct)
         {
-            var appDto = new ExternalTransferRequestDto(
-                dto.FromAccountId,
-                dto.ExternalBankCode,
-                dto.ExternalAccountRef,
-                dto.Amount,
-                dto.Currency
-            );
-
-            var id = await _service.CreateAsync(appDto, ct);
+            var id = await _externalService.CreateAsync(request, ct);
 
             return Ok(new { TransferId = id });
         }

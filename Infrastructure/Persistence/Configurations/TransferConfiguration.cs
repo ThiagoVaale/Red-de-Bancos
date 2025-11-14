@@ -41,12 +41,21 @@ namespace Infrastructure.Persistence.Configurations
             );
 
             var directionConv = new ValueConverter<TransferDirection, string>(
+                v => v.ToString(),
+                v => Enum.Parse<TransferDirection>(v)
+            );
             
             var bankConv = new ValueConverter<BankCode?, string?>(
                 v => v.HasValue ? v.Value.ToString() : null,
                 v => v != null ? Enum.Parse<BankCode>(v) : (BankCode?)null
             );
-                b.HasKey(x => x.Id);
+
+            var moneyConv = new ValueConverter<Money, string>(
+                m => MoneyToString(m),
+                s => StringToMoney(s)
+            );
+
+            b.HasKey(x => x.Id);
 
                 b.Property(x => x.Id)
                     .HasConversion(guidConv)
@@ -85,7 +94,7 @@ namespace Infrastructure.Persistence.Configurations
 
                 b.Property(x => x.CompletedAt);
 
-                b.Property(x => x.CanceledAt);
+                b.Property(x => x.CanceledAt)
                 .HasMaxLength(200);
 
             b.Property(x => x.Reason)
