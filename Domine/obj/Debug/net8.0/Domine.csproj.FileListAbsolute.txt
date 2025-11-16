@@ -10,3 +10,15 @@ C:\Users\Usuario\Desktop\Red de Bancos\Domine\obj\Debug\net8.0\Domine.dll
 C:\Users\Usuario\Desktop\Red de Bancos\Domine\obj\Debug\net8.0\refint\Domine.dll
 C:\Users\Usuario\Desktop\Red de Bancos\Domine\obj\Debug\net8.0\Domine.pdb
 C:\Users\Usuario\Desktop\Red de Bancos\Domine\obj\Debug\net8.0\ref\Domine.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\bin\Debug\net8.0\Domine.deps.json
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\bin\Debug\net8.0\Domine.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\bin\Debug\net8.0\Domine.pdb
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.AssemblyInfoInputs.cache
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.AssemblyInfo.cs
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.csproj.CoreCompileInputs.cache
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.sourcelink.json
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\refint\Domine.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\Domine.pdb
+C:\Users\Franco\Documents\Red-de-Bancos\Domine\obj\Debug\net8.0\ref\Domine.dll
