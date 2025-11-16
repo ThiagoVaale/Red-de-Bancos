@@ -38,3 +38,23 @@ C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\refint\I
 C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Domine.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Domine.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

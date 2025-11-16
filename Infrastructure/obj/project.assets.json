@@ -2768,11 +2768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\mauch\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2793,8 +2793,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Application\\Application.csproj": {
-              "projectPath": "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Application\\Application.csproj"
+            "C:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Application\\Application.csproj"
             }
           }
         }

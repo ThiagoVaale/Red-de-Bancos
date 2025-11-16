@@ -30,3 +30,19 @@ C:\Users\Franco\Documents\Red-de-Bancos\Application\obj\Debug\net8.0\Application
 C:\Users\Franco\Documents\Red-de-Bancos\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\Franco\Documents\Red-de-Bancos\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\Franco\Documents\Red-de-Bancos\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\bin\Debug\net8.0\Application.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\bin\Debug\net8.0\Domine.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\bin\Debug\net8.0\Domine.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\mauch\Desktop\lenguajes de prog\tp_Final\Red-de-Bancos\Application\obj\Debug\net8.0\ref\Application.dll

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace Application.DTOs
 {
     public sealed record ExternalTransferRequestDto(
+        Guid transferId,
         Guid FromAccountId,
         BankCode ExternalBankCode,
         string? ExternalAccountRef, 

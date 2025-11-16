@@ -1,6 +1,8 @@
 using Application.Abstractions;
 using Application.Services;
 using Domine.Enums;
+using GoodBank.Application.Interfaces;
+using GoodBank.Infrastructure.Strategies;
 using GoodBank.Middleware;
 using Infrastructure.Gateways;
 using Infrastructure.Persistence;
@@ -20,10 +22,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<ExceptionMiddleware>();
-builder.Services.AddTransient<BadBankStrategy>();
-builder.Services.AddTransient<WorseBankStrategy>();
-builder.Services.AddTransient<WorstBankStrategy>();
-builder.Services.AddSingleton<StrategyResolver>(sp =>
+
+
+builder.Services.AddScoped<IExternalTransferStrategy, BadBankStrategy>();
+builder.Services.AddScoped<IExternalTransferStrategy, WorseBankStrategy>();
+builder.Services.AddScoped<IExternalTransferStrategy, WorstBankStrategy>();
+
+builder.Services.AddScoped<StrategyResolver>(sp =>
 {
     return (BankCode bankCode) =>
     {
@@ -45,6 +50,27 @@ builder.Services.AddSingleton<StrategyResolver>(sp =>
         };
     };
 });
+
+builder.Services.AddHttpClient("BadBank", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ExternalBanks:BadBank:BaseUrl"]!);
+    client.Timeout = TimeSpan.FromSeconds(5);
+});
+
+builder.Services.AddHttpClient("WorseBank", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ExternalBanks:WorseBank:BaseUrl"]!);
+    client.Timeout = TimeSpan.FromSeconds(5);
+});
+
+builder.Services.AddHttpClient("WorstBank", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["ExternalBanks:WorstBank:BaseUrl"]!);
+    client.Timeout = TimeSpan.FromSeconds(3);
+});
+
+// El StrategyResolver ya lo habrá registrado el Desarrollador 1
+
 builder.Services.AddScoped<IExternalTransferGateway, ExternalTransferGateway>();
 builder.Services.AddDbContext<GoodBankDbContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));

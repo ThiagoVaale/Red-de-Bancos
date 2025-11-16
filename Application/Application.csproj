@@ -14,4 +14,9 @@
     <ProjectReference Include="..\Domine\Domine.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstractions\NewFolder\" />
+    <Folder Include="Resolvers\" />
+  </ItemGroup>
+
 </Project>

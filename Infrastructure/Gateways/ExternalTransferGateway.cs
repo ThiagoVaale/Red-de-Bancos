@@ -1,9 +1,7 @@
 ﻿using Application.Abstractions;
 using Application.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using GoodBank.Application.Models;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Gateways
@@ -17,11 +15,23 @@ namespace Infrastructure.Gateways
             _resolver = resolver;
         }
 
-        public Task<(bool success, string? externalReference, string? error)> SendAsync(
-        ExternalTransferRequestDto request,CancellationToken ct)
+        public async Task<(bool success, string? externalReference, string? error)> SendAsync(
+        ExternalTransferRequestDto request, CancellationToken ct)
         {
             var strategy = _resolver(request.ExternalBankCode);
-            return strategy.SendAsync(request, ct);
+
+            // AWAIT la llamada para obtener el objeto ExternalTransferResult
+            ExternalTransferResult result = await strategy.SendAsync(request, ct);
+
+            // 🚨 Mapeo Corregido: Usando IsSuccess y ExternalReferenceId
+            return (
+                // La tupla espera 'success' (bool), se mapea desde IsSuccess
+                success: result.IsSuccess,
+                // La tupla espera 'externalReference' (string?), se mapea desde ExternalReferenceId
+                externalReference: result.ExternalReferenceId,
+                // La tupla espera 'error' (string?), se mapea desde ErrorMessage
+                error: result.ErrorMessage
+            );
         }
     }
 }

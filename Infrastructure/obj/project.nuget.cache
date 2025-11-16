@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nyDjxdh0ETc=",
+  "dgSpecHash": "vx2m7QKa70s=",
   "success": true,
-  "projectFilePath": "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mauch\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mauch\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
