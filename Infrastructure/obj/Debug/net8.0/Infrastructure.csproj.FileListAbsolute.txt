@@ -18,3 +18,23 @@ C:\Users\Usuario\Desktop\Red de Bancos\Infrastructure\obj\Debug\net8.0\refint\In
 C:\Users\Usuario\Desktop\Red de Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\Usuario\Desktop\Red de Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Red de Bancos\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Domine.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Application.pdb
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\bin\Debug\net8.0\Domine.pdb
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
+C:\Users\Franco\Documents\Red-de-Bancos\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

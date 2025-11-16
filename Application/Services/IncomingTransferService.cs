@@ -52,5 +52,31 @@ namespace Application.Services
 
             return transfer.Id;
         }
+
+        public async Task<Guid> ProcessIncomingTransfer(IncomingExternalTransferDto dto, CancellationToken ct)
+        {
+            if (await _transfers.ExistsByExternalRefAsync(dto.ExternalReference, ct))
+                throw new ValidationException("Duplicate external reference.");
+
+            var account = await _accounts.GetByCbuAsync(dto.ToAccountCbu, ct)
+                ?? throw new NotFoundException("Destination account not found.");
+
+            if (!account.IsActive)
+                throw new ConflictException("Inactive account.");
+
+
+            var money = new Money(dto.Amount, dto.Currency);
+
+            account.Credit(money);
+
+            var transfer = Transfer.IncomingExternal(dto.ExternalReference, money);
+            transfer.MarkCompleted();
+
+            await _accounts.UpdateAsync(account, ct);
+            await _transfers.AddAsync(transfer, ct);
+            await _uow.SaveChangesAsync(ct);
+
+            return transfer.Id;
+        }
     }
 }
