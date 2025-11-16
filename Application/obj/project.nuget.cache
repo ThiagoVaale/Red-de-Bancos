@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Zxo5po9raGQ=",
+  "dgSpecHash": "DJprrE2jV80=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Franco\\Documents\\Red-de-Bancos\\Application\\Application.csproj",
+  "projectFilePath": "c:\\Users\\mauch\\Desktop\\lenguajes de prog\\tp_Final\\Red-de-Bancos\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Franco\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+    "C:\\Users\\mauch\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }
