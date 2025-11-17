@@ -20,9 +20,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<ExceptionMiddleware>();
+
 builder.Services.AddTransient<BadBankStrategy>();
 builder.Services.AddTransient<WorseBankStrategy>();
 builder.Services.AddTransient<WorstBankStrategy>();
+
 builder.Services.AddSingleton<StrategyResolver>(sp =>
 {
     return (BankCode bankCode) =>
@@ -32,19 +34,18 @@ builder.Services.AddSingleton<StrategyResolver>(sp =>
             BankCode.BadBank => sp.GetRequiredService<BadBankStrategy>(),
             BankCode.WorseBank => sp.GetRequiredService<WorseBankStrategy>(),
             BankCode.WorstBank => sp.GetRequiredService<WorstBankStrategy>(),
-
             BankCode.GoodBank => throw new ArgumentOutOfRangeException(
                 nameof(bankCode),
                 "GoodBank no usa estrategia externa."
             ),
-
             _ => throw new ArgumentOutOfRangeException(
                 nameof(bankCode),
-                "BankCode no soportado para transferencia externa."
+                "BankCode no soportado."
             )
         };
     };
 });
+
 builder.Services.AddScoped<IExternalTransferGateway, ExternalTransferGateway>();
 builder.Services.AddDbContext<GoodBankDbContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));

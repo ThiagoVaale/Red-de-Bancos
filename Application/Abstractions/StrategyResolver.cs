@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Application.Abstractions
 {
-    public delegate ITransferStrategy StrategyResolver(BankCode bankCode);
+    public delegate IExternalTransferStrategy StrategyResolver(BankCode bankCode);
 }

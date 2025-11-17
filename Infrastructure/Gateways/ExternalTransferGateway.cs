@@ -17,11 +17,16 @@ namespace Infrastructure.Gateways
             _resolver = resolver;
         }
 
-        public Task<(bool success, string? externalReference, string? error)> SendAsync(
+        public async Task<(bool success, string? externalReference, string? error)> SendAsync(
         ExternalTransferRequestDto request,CancellationToken ct)
         {
             var strategy = _resolver(request.ExternalBankCode);
-            return strategy.SendAsync(request, ct);
+            ExternalTransferResultDto result = await strategy.SendAsync(request, ct);
+            return (
+                success: result.IsSuccess,
+                externalReference: result.ExternalReferenceId,
+                error: result.ErrorMessage
+            );
         }
     }
 }

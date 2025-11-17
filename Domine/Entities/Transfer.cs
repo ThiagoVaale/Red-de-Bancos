@@ -76,5 +76,10 @@ namespace Domine.Entities
             Reason = reason;
             CanceledAt = DateTime.UtcNow;
         }
+
+        public void SetExternalReference(string reference)
+        {
+            ExternalReference = reference;
+        }
     }
 }

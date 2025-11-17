@@ -47,27 +47,26 @@ namespace Application.Services
 
             var money = new Money(dto.Amount, dto.Currency);
 
-            from.Debit(money);
             var transfer = Transfer.OutgoingExternal(from.Id, dto.ExternalBankCode, money, dto.ExternalAccountRef);
-
-            await _accounts.UpdateAsync(from, ct);
             await _transfers.AddAsync(transfer, ct);
             await _uow.SaveChangesAsync(ct);
 
+
             var result = await _gateway.SendAsync(dto, ct);
-            bool success = result.success;
-            string? externalRef = result.externalReference;
-            string? error = result.error;
 
             transfer = (await _transfers.GetByIdAsync(transfer.Id, ct))!;
 
-            if (success)
+            if (result.success)
             {
+                from.Debit(money);
+                await _accounts.UpdateAsync(from, ct);
+
                 transfer.MarkCompleted();
+                transfer.SetExternalReference(result.externalReference);
             }
             else
             {
-                transfer.Fail(error ?? "External transfer failed.");
+                transfer.Fail(result.error ?? "External transfer failed.");
             }
 
             await _transfers.UpdateAsync(transfer, ct);
